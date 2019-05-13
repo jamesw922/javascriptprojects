@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.container {
+    display: block;
+    font-family: 'Play', sans-serif;
+    height: 90%;
+    width: 65%;
+}
+
+#top {
+    margin-top: 15%;
+}
+
+#instructions {
+    font-size: 2.7rem;
+    margin-bottom: 5rem;
+}
+
+#playing-field {
+    display: block;
+    text-align: center;
+    border: 3px solid azure;
+    border-radius: 3px;
+    padding-top: 10%;
+}
+
+#guess-btn {
+    color: navy;
+    border-color: navy;
+    background-color: azure;
+}
+
+.message {
+    font-size: 2rem;
+    margin: 5rem auto;
+}
+
+#wrong-guesses {
+    color: red;
+    font-size: 2rem;
+    text-decoration: line-through;
+    letter-spacing: .1rem;
+}
