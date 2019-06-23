@@ -1,0 +1,136 @@
+body {
+    background-image: url("https://www.fg-a.com/wallpapers/marble-white-1-2018.jpg");
+    font-family: "Book Antiqua", Palatino, serif;
+}
+main {
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: 3px 2px 3px darkslategray;
+    color: black;
+    letter-spacing: .3em;
+    line-height: 1.2em;
+}
+
+.alt-font {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-size: 6.5em;
+    color: floralwhite;
+    text-shadow: 5px 3px 3px black;
+}
+
+label {
+    font-size: 1.7em;
+}
+
+#number-input{
+    font-size: 2em;
+    width: 17%;
+    margin-top: 3%;
+}
+
+button :hover {
+    color: firebrick;
+    text-shadow: 5px 2px 3px floralwhite;
+}
+
+#submit-button {
+    font-size: 2em;
+    background-color: darkslategray;
+    color: floralwhite;
+    text-shadow: -2px 1px 1px black;
+    border-radius: 3px;    
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 5;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 895px) {
+    h1 {
+        font-size: 3.3em;
+    }
+    h2 {
+        font-size: 5em;
+    }
+    label {
+        font-size: 1.3em;
+    }
+    h3 {
+        margin: 5% auto;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    h1 {
+        font-size: 2.7em;
+        letter-spacing: .2em;
+    }
+    h2 {
+        font-size: 3.3em;
+        margin: 13% auto;
+    }
+    #number-input {
+        font-size: 1.3em;
+    }
+    #submit-button {
+        font-size: 1.4em;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    h1 {
+        font-size: 2.3em;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2.9em;
+    }
+    #footer {
+        font-size: .7em;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    h1 {
+        font-size: 1.7em;
+        letter-spacing: .1em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+}
