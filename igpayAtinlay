@@ -1,0 +1,26 @@
+// Basic Solution to a Free Code Camp challenge to create a Pig Latin Translator
+
+function translatePigLatin(str) {
+  // define vowels in an array.
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  /* check the first letter of the string against the vowel array using charAt and simply add the ending if the word begins with a vowel. */
+  if (vowels.includes(str.charAt(0))) {
+    str = str + 'way';
+  } else { /* use a for loop to find the first instance of a vowel and then use slice to create two strings from the character, from and up to the instance. */
+    for (let i = 0; i < str.length; i++) {
+      if (vowels.includes(str[i])) {
+        let igPay = str.slice(i);
+        let atinLay = str.slice(0, i);
+        // combine the slices in the new order.
+        str = igPay + atinLay;
+        break;
+      }
+    }
+    /* add 'ay' to the end of the string, completing the challenge whether your loop found a vowel or not. */
+    str = str + 'ay';
+  }
+  return str;
+}
+
+translatePigLatin("learning");
