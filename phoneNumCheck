@@ -1,0 +1,12 @@
+function telephoneCheck(str) {
+  if (str.match(/^1?(\s|-?)(\([0-9]{3}\)|[0-9]{3})(\s|-?)[0-9]{3}(\s|-?)[0-9]{4}$/)) {
+    console.log(str);
+    return true;
+  }
+  else {
+    console.log('False');
+    return false;
+  }
+}
+
+telephoneCheck("1 555-555-5555");
