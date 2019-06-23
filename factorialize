@@ -1,0 +1,38 @@
+// The top solution is the first approach to this problem that I saved
+
+function factorialize(num) {
+    if (num === 0) {
+      return 1;
+    }
+    let numArr = [];
+    while (num > 0) {
+      numArr.push(num);
+      num--;
+    }
+    let x = numArr[0];
+    while (numArr[0] > 1) {
+      numArr.shift();
+      x = x * (numArr[0]);
+      console.log(numArr);
+      console.log(x);
+    }
+    return x;
+}
+  
+factorialize(7);
+
+// The following is a more recent approach 
+
+function factorialize(num) {
+  let x = num;
+  if (num === 0) {
+    return 1;
+  }
+  while (num > 1) {
+    x = x * (num - 1);
+    num--;
+  }
+  return x;
+}
+
+factorialize(7);
